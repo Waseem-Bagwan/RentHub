@@ -11,7 +11,12 @@ function Login() {
   };
 
   return (
-    <div className="flex w-screen h-screen">
+    <div className="w-screen h-screen">
+      <nav className="w-full bg-black text-white py-4 px-6 text-2xl font-bold shadow-lx shadow-gray-400 ">
+        RentHub
+      </nav>
+
+      <div className="flex h-full">
       {/* Left Side - Image */}
       <div className="w-1/2 flex items-center justify-center bg-white pl-10 ">
         <img src="\login_deco.jpg" alt="Login Illustration" className="rounded-lg w-3/4 h-auto w-600 h-600 object-cover" />
@@ -50,6 +55,7 @@ function Login() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

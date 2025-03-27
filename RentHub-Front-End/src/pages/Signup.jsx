@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [userType, setUserType] = useState(""); // Track Tenant or Landlord
@@ -6,6 +7,8 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate(); 
+  
 
   const handleSignup = (e) => {
     e.preventDefault();
@@ -35,7 +38,7 @@ function Signup() {
               </button>
               <button
                 className="w-1/2 bg-green-600 text-white p-3 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105"
-                onClick={() => setUserType("Landlord")}
+                onClick={() => navigate('/landlord-signup')}
               >
                 Landlord
               </button>
