@@ -54,19 +54,13 @@ function LandlordSignup() {
     });
   };
 
- 
-
   return (
     <div className="w-474 h-300 bg-orange-200 overflow-y-auto ">
-      
       <div style={{ fontFamily: "'Corinthia', cursive" }}>
-  <nav className="bg-orange-200 text-5xl text-black text-hardbold p-4">
-    RentHub
-  </nav>
-</div>
-
-
-    
+        <nav className="bg-orange-200 text-5xl text-black text-hardbold p-4">
+          RentHub
+        </nav>
+      </div>
 
       {/* Content */}
       <div className="flex pt-6 bg-orange-200 pl-30 h-full w-full top-0">
@@ -102,19 +96,26 @@ function LandlordSignup() {
               {/* Moving Ball */}
               <div
                 className={`absolute w-20 h-20 bg-gradient-to-r from-orange-50 to-orange-400 rounded-full shadow-md transition-transform duration-500 ${
-    isRight ? "translate-x-58" : "translate-x-0"
+                  isRight ? "translate-x-58" : "translate-x-0"
                 }`}
               ></div>
             </div>
-                {isRight ? ( <div>
-            <h2 className="text-4xl ml-10 text-black font-semibold text-left mb-6 mt-10 ">
-              Rent your first property and start earning with RentHub ✨
-            </h2>
-             </div> ) : (<div>  <h2 className="text-4xl ml-10 text-black font-semibold text-left mb-6 mt-10 ">
-              <h2 className="text-4x text-black font-semibold text-left mb-6 mt-10  ">
-              Wherever life takes you, RentHub helps you find a home ✨
-            </h2>
-            </h2> </div>)}
+            {isRight ? (
+              <div>
+                <h2 className="text-4xl ml-10 text-black font-semibold text-left mb-6 mt-10 ">
+                  Rent your first property and start earning with RentHub ✨
+                </h2>
+              </div>
+            ) : (
+              <div>
+                {" "}
+                <h2 className="text-4xl ml-10 text-black font-semibold text-left mb-6 mt-10 ">
+                  <h2 className="text-4x text-black font-semibold text-left mb-6 mt-10  ">
+                    Wherever life takes you, RentHub helps you find a home ✨
+                  </h2>
+                </h2>{" "}
+              </div>
+            )}
 
             <div className="w-3/4 w-full bg-white p-10 ">
               {isRight ? (
@@ -318,12 +319,11 @@ function LandlordSignup() {
                       />
                     </div>
                     <button
-                    type="submit"
-                    className="hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 w-full text-white p-3 rounded-lg hover:bg-blue-700"
-                  >
-                    Sign up
-                  </button>
-
+                      type="submit"
+                      className="hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 w-full text-white p-3 rounded-lg hover:bg-blue-700"
+                    >
+                      Sign up
+                    </button>
                   </div>
                 </form>
               )}
@@ -350,16 +350,14 @@ function LandlordSignup() {
         {/* Right Side */}
 
         <div className="w-1/2 p-10 bg-white relative">
-  <img
-    src="/home2.jpg"
-    alt="home interior pic"
-    className="absolute top-0 botton-0 left-0 w-250 h-280 object-cover rounded-lg"
-  />
-</div>
-
+          <img
+            src="/home2.jpg"
+            alt="home interior pic"
+            className="absolute top-0 botton-0 left-0 w-250 h-280 object-cover rounded-lg"
+          />
         </div>
       </div>
-    
+    </div>
   );
 }
 
