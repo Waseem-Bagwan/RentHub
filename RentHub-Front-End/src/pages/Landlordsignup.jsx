@@ -55,7 +55,7 @@ function LandlordSignup() {
   };
 
   return (
-    <div className="w-474 h-300 bg-orange-200 overflow-y-auto ">
+    <div className="w-474 h-330 bg-orange-200 overflow-y-auto ">
       <div style={{ fontFamily: "'Corinthia', cursive" }}>
         <nav className="bg-orange-200 text-5xl text-black text-hardbold p-4">
           RentHub
@@ -63,9 +63,9 @@ function LandlordSignup() {
       </div>
 
       {/* Content */}
-      <div className="flex pt-6 bg-orange-200 pl-30 h-full w-full top-0">
+      <div className="flex bg-orange-200 pl-30 h-293 w-full">
         {/* (Left Side) */}
-        <div className="w-1/2 flex items-center justify-start top-0 h-full bg-white w-205 ">
+        <div className="w-1/2 flex items-center justify-start  h-full bg-white w-205 ">
           <div className="w-full h-293 mr-0 ml-0 p-8 bg-white ">
             {/* Toggle Track */}
             <div
@@ -349,11 +349,11 @@ function LandlordSignup() {
 
         {/* Right Side */}
 
-        <div className="w-1/2 p-10 bg-white relative">
+        <div className="w-1/2 p-10 bg-white h-293 relative">
           <img
             src="/home2.jpg"
             alt="home interior pic"
-            className="absolute top-0 botton-0 left-0 w-250 h-280 object-cover rounded-lg"
+            className="absolute top-0 botton-0 left-0 w-250 h-full object-cover rounded-lg"
           />
         </div>
       </div>
